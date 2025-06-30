@@ -4,6 +4,9 @@
     box-sizing: border-box;
   }
   
+  html{
+    scroll-behavior: smooth;
+  }
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -57,28 +60,28 @@
     min-height: 100vh;
   }
   
-  .hero {
+  #home {
     background: url('champion.jpg') no-repeat center center/cover;
     text-align: center;
   }
   
-  .hero h1 {
+  #home h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
   }
   
-  .about, .spotlight, .players, .founders, .contact {
+  #about, #players, #founders, #contact {
     background-color: #111;
   }
   
-  .spotlight-cards, .founder-cards, .player-grid {
+  #founder-cards, #player-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     margin-top: 2rem;
   }
   
-  .card, .player-card, .founder-card {
+  .card, #player-card, #founder-card {
     background: #222;
     padding: 1.5rem;
     border-radius: 10px;
@@ -113,7 +116,6 @@
   form button:hover {
     color: darkgoldenrod;
     background-color: red;
-
   }
 
   footer {
